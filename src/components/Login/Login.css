@@ -1,5 +1,5 @@
 .header-login {
-  width: 396px;
+  max-width: 396px;
   margin: 0 auto;
   padding: 70px 0 0;
 }
@@ -12,16 +12,10 @@
   }
 }
 
-@media screen and (max-width: 396px) {
-  .header-login {
-    width: calc(100vw / (396 / 396));
-  }
-}
-
 @media screen and (max-width: 320px) {
   .header-login {
     padding-top: 56px;
-    width: 320px;
+    max-width: 320px;
     justify-content: center;
   }
 }
