@@ -7,7 +7,7 @@ function SearchForm(props) {
     <>
       <section className="search">
         <form className="search__form"> 
-          <input className="search__input" name="search" placeholder="Фильм" autoComplete="off" />
+          <input className="search__input" name="search" required placeholder="Фильм" type="text" autoComplete="off" />
           <button className="search__button-submit button-hovered" type="submit">
             <img src={Find} alt="Найти" />
           </button>

@@ -21,7 +21,7 @@ function MoviesCardList(props) {
         ))}
 
       </div>
-      <button className="gallery__more button-hovered">Ещё</button>
+      <button className="gallery__more-button button-hovered">Ещё</button>
 
     </section>
   );

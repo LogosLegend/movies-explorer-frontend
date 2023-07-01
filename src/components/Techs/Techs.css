@@ -39,20 +39,19 @@
 .table-tech {
   margin: 100px auto 90px;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 90px);
   align-items: center;
   list-style: none;
-  width: 690px;
+  max-width: 690px;
+  gap: 10px;
 }
 
 .table-tech__cell {
-  margin: 0 0 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90px;
   height: 60px;
   background: #303030;
   border-radius: 10px;
@@ -74,7 +73,7 @@
   .table-tech {
     margin-top: 83px;
     margin-bottom: 90px;
-    width: calc(100vw / (768 / 648));
+    grid-template-columns: repeat(auto-fill, 84px);
   }
 }
 
@@ -99,18 +98,22 @@
   }
 
   .table-tech__cell {
-    width: 84px;
     height: 57px;
     font-size: 12px;
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 560px) {
   .tech {
     padding-top: 71px;
+    min-height: 651px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .tech {
     padding-left: 18px;
     padding-right: 18px;
-    min-height: 651px;
   }
 
   .tech__title {

@@ -12,6 +12,12 @@
   }
 }
 
+@media screen and (max-width: 396px) {
+  .header-login {
+    width: calc(100vw / (396 / 396));
+  }
+}
+
 @media screen and (max-width: 320px) {
   .header-login {
     padding-top: 56px;

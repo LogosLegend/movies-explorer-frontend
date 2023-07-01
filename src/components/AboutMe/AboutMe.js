@@ -13,7 +13,7 @@ function AboutMe(props) {
           <p className="about-me-info__subtitle">Фронтенд-разработчик, 30 лет</p>
           <p className="about-me-info__info">Я родился и живу в Саратове, закончил факультет экономики СГУ. У меня есть жена 
 и дочь. Я люблю слушать музыку, а ещё увлекаюсь бегом. Недавно начал кодить. С 2015 года работал в компании «СКБ Контур». После того, как прошёл курс по веб-разработке, начал заниматься фриланс-заказами и ушёл с постоянной работы.</p>
-          <a className="about-me-info__git button-hovered" href="https://github.com/LogosLegend">Github</a>
+          <a target="_blank" rel="noopener noreferrer" className="about-me-info__git button-hovered" href="https://github.com/LogosLegend">Github</a>
         </div>
 
         <img className="about-me__img" src={Avatar} alt="Аватар" />

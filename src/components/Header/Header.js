@@ -24,16 +24,16 @@ function Header(props) {
         } />
 
         <Route path="/sign-in" element={
-          <header class="header auth-success header-login">
-            <button class="header__logo-link button-without-styles" onClick={props.OnClickNavigateMain}>
+          <header className="header auth-success header-login">
+            <button className="header__logo-link button-without-styles" onClick={props.OnClickNavigateMain}>
               <img src={Logo} alt="Логотип" />
             </button>
           </header>
         } />
 
         <Route path="/sign-up" element={
-          <header class="header auth-success header-login">
-            <button class="header__logo-link button-without-styles" onClick={props.OnClickNavigateMain}>
+          <header className="header auth-success header-login">
+            <button className="header__logo-link button-without-styles" onClick={props.OnClickNavigateMain}>
               <img src={Logo} alt="Логотип" />
             </button>
           </header>

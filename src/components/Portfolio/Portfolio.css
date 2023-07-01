@@ -33,6 +33,10 @@
   text-decoration: none;
 }
 
+.portfolio__link:nth-child(odd) {
+  margin-right: 10px;
+}
+
 .portfolio__link:nth-child(even) {
   position: relative;
   top: 5px;
@@ -52,11 +56,9 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 426px) {
   .portfolio {
     padding-top: 35px;
-    padding-left: 14px;
-    padding-right: 14px;
     min-height: 329px;
   }
 
@@ -73,5 +75,12 @@
   .portfolio__link:nth-child(even) {
     top: 1px;
     right: 1.5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .portfolio {
+    padding-left: 14px;
+    padding-right: 14px;
   }
 }

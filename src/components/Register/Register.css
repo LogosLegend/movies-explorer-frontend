@@ -40,6 +40,10 @@
   color: #fff;
 }
 
+.auth__input::placeholder {
+  color: #8b8b8b;
+}
+
 .auth__input_type_error {
   color: #ee3465;
 }
@@ -62,6 +66,7 @@
   content: attr(title);
   position: absolute;
   top: 0;
+  opacity: 0;
   left: 15px;
   font-size: 13px;
   line-height: 46px;
@@ -71,11 +76,13 @@
   pointer-events: none;
 }
 
-.auth__input:focus + .auth__label:before, .auth__label_active:before {
+.auth__input:not(:placeholder-shown) + .auth__label:before,
+.auth__label_active:before {
   line-height: 12px;
   font-size: 10px;
   top: -22px;
   left: 0;
+  opacity: 1;
 }
 
 .auth__button {
@@ -88,7 +95,6 @@
   line-height: 17px;
   font-weight: 500;
   margin: auto 0 0;
-  width: 396px;
   height: 45px;
   padding: 0;
   -webkit-user-select: none;
@@ -108,6 +114,12 @@
 .auth__switch-link {
   color: #4285f4;
   cursor: pointer;
+}
+
+@media screen and (max-width: 396px) {
+  .auth__container {
+    width: calc(100vw / (396 / 396));
+  }
 }
 
 @media screen and (max-width: 320px) {

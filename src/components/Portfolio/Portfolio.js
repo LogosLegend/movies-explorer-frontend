@@ -8,16 +8,16 @@ function Portfolio(props) {
         <h2 className="portfolio__title">Портфолио</h2>
 
         <div className="portfolio__container">
-          <a className="portfolio__link button-hovered" href="https://logoslegend.github.io/russian-travel/">Статичный сайт</a>
-          <a className="portfolio__link button-hovered" href="https://logoslegend.github.io/russian-travel/">↗</a>
+          <a target="_blank" rel="noopener noreferrer" className="portfolio__link button-hovered" href="https://logoslegend.github.io/russian-travel/">Статичный сайт</a>
+          <a target="_blank" rel="noopener noreferrer" className="portfolio__link button-hovered" href="https://logoslegend.github.io/russian-travel/">↗</a>
         </div>
         <div className="portfolio__container">
-          <a className="portfolio__link button-hovered" href="https://logoslegend.github.io/mesto/">Адаптивный сайт</a>
-          <a className="portfolio__link button-hovered" href="https://logoslegend.github.io/mesto/">↗</a>
+          <a target="_blank" rel="noopener noreferrer" className="portfolio__link button-hovered" href="https://logoslegend.github.io/mesto/">Адаптивный сайт</a>
+          <a target="_blank" rel="noopener noreferrer" className="portfolio__link button-hovered" href="https://logoslegend.github.io/mesto/">↗</a>
         </div>
         <div className="portfolio__container">
-          <a className="portfolio__link button-hovered" href="https://logos.nomoredomains.rocks/">Одностраничное приложение</a>
-          <a className="portfolio__link button-hovered" href="https://logos.nomoredomains.rocks/">↗</a>
+          <a target="_blank" rel="noopener noreferrer" className="portfolio__link button-hovered" href="https://logos.nomoredomains.rocks/">Одностраничное приложение</a>
+          <a target="_blank" rel="noopener noreferrer" className="portfolio__link button-hovered" href="https://logos.nomoredomains.rocks/">↗</a>
         </div>
       </section>
     </>

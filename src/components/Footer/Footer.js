@@ -13,8 +13,8 @@ function Footer(props) {
           <p className="footer__copyright">© 2023</p>
 
         <div className="footer__links">
-          <a className="footer__link button-hovered" href="https://practicum.yandex.ru/profile/web/">Яндекс.Практикум</a>
-          <a className="footer__link button-hovered" href="https://github.com/LogosLegend">Github</a>
+          <a target="_blank" rel="noopener noreferrer" className="footer__link button-hovered" href="https://practicum.yandex.ru/profile/web/">Яндекс.Практикум</a>
+          <a target="_blank" rel="noopener noreferrer" className="footer__link button-hovered" href="https://github.com/LogosLegend">Github</a>
         </div>
         </div>
       </footer>

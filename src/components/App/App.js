@@ -69,11 +69,43 @@ return (
 
         <Routes>
           <Route path="/" element={ <Main /> }/>
-          <Route path="/movies" element={ <Movies preloader={isLoaded} movies={moviesList} isSaved={isSavedMovie} onSavedMovie={handleSavedMovieClick} />}/>
-          <Route path="/saved-movies" element={ <SavedMovies preloader={isLoaded} movies={moviesList} />}/>
-          <Route path="/profile" element={ <Profile OnClickNavigateSignOut={handleOnClickNavigateSignOut}/>}/>
-          <Route path="/sign-up" element={<Register OnClickNavigateSignIn={handleOnClickNavigateSignIn} OnClickNavigateMovies={handleOnClickNavigateMovies} />} />
-          <Route path="/sign-in" element={<Login OnClickNavigateSignUp={handleOnClickNavigateSignUp} OnClickNavigateMovies={handleOnClickNavigateMovies} />} />
+
+          <Route path="/movies" element={
+            <Movies
+              preloader={isLoaded}
+              movies={moviesList}
+              isSaved={isSavedMovie}
+              onSavedMovie={handleSavedMovieClick}
+            />}
+          />
+          
+          <Route path="/saved-movies" element={
+            <SavedMovies
+              preloader={isLoaded}
+              movies={moviesList}
+            />}
+          />
+
+          <Route path="/profile" element={
+            <Profile
+              OnClickNavigateSignOut={handleOnClickNavigateSignOut}
+            />}
+          />
+
+          <Route path="/sign-up" element={
+            <Register
+              OnClickNavigateSignIn={handleOnClickNavigateSignIn}
+              OnClickNavigateMovies={handleOnClickNavigateMovies}
+            />}
+          />
+
+          <Route path="/sign-in" element={
+            <Login
+              OnClickNavigateSignUp={handleOnClickNavigateSignUp}
+              OnClickNavigateMovies={handleOnClickNavigateMovies}
+            />}
+          />
+
           <Route path="/not-found" element={ <NotFoundError /> } />
           <Route path="*" element={ <Navigate to="/not-found" replace /> } />
         </Routes>

@@ -5,7 +5,7 @@
   display: grid;
 }
 
-.gallery__more {
+.gallery__more-button {
   margin: 0 auto 4px;
   padding: 0;
   background: transparent;
@@ -17,7 +17,7 @@
   font-weight: 500;
   line-height: 15px;
   height: 36px;
-  width: 320px;
+  width: clamp(240px, 80%, 320px);
   -webkit-user-select: none;
   user-select: none;
   display: grid;
@@ -74,6 +74,5 @@
 
   .gallery__more {
     margin-top: 65px;
-    width: 240px;
   }
 }
